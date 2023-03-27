@@ -20,7 +20,7 @@ const Articles = () => {
         </li>
         <li>
           <NavLink
-           to="/articels/2"
+           to="/articles/2"
            style={({ isActive }) => (isActive ? activeStyle : undefined)}
            >
             게시글 2
@@ -28,7 +28,7 @@ const Articles = () => {
         </li>
         <li>
           <NavLink
-           to = "/articels/3"
+           to = "/articles/3"
            style={({ isActive}) => (isActive ? activeStyle : undefined)}
            >
             게시글 3
