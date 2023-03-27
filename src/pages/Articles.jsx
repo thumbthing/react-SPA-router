@@ -2,19 +2,19 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const Articles = () => {
   return (
-    <>
+    <div>
       <Outlet />
       <ul>
         <ArticleItem id = {1} />
         <ArticleItem id = {2} />
         <ArticleItem id = {3} />
       </ul>
-    </>
+    </div>
   );
 };
 
 const ArticleItem = ({ id }) => {
-  const acticeStyle = {
+  const activeStyle = {
     color: 'green',
     fontsize: 21,
   };
@@ -23,7 +23,7 @@ const ArticleItem = ({ id }) => {
     <li>
       <NavLink
        to = {`/articles/${id}`}
-       style = {({ isActive }) => (isActive ? acticeStyle : undefined)}
+       style = {({ isActive }) => (isActive ? activeStyle : undefined)}
       >
         게시글 {id}
       </NavLink>
